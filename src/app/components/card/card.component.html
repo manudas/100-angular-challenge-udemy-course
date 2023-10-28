@@ -1,0 +1,17 @@
+<section class="card">
+    <div class="card-header">
+        <i *ngIf="className" [class]="className"></i>
+        <h5 *ngIf="title">
+            {{ title }}
+        </h5>
+        <h6 *ngIf="subTitle">
+            {{ subTitle }}
+        </h6>
+    </div>
+    <div class="card-body">
+        <ng-content select="[body]"></ng-content>
+    </div>
+    <footer class="card-footer">
+        <ng-content select="[footer]"></ng-content>
+    </footer>
+</section>

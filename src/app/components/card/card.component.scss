@@ -1,0 +1,17 @@
+@import '../../../styles';
+
+.card {
+    margin-top: 10px;
+    &-header {
+        padding: 0 10px 0 10px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: auto auto 1fr;
+        background-color: $green;
+        color: $white;
+        gap: 10px;
+        align-items: center;
+    }
+
+    @include box-shadow();
+}
