@@ -28,4 +28,15 @@
     <p footer>This is my card footer</p>
     <p body>This is my card body</p>
 </app-card>
+<app-card
+    className="fa-solid fa-face-grin-squint-tears fa-shake"
+    title="Accordion card"
+    subTitle="This is my accordion card"
+>
+    <app-accordion
+        body
+        [items]="accordionItems"
+    >
+    </app-accordion>
+</app-card>
 <router-outlet></router-outlet>

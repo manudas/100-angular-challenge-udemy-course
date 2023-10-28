@@ -1,0 +1,25 @@
+@import '../../../styles';
+
+.accordion {
+    padding: 0;
+    li {
+        list-style: none;
+        display: grid;
+        align-items: center;
+        /* auto height row, 1fr first  col, auto second col */
+        grid-template: auto / 1fr auto;
+    }
+    i {
+        transition: all 0.3s;
+        &.isOpen{
+            transform: rotate(180deg);
+        }
+    }
+    &-content {
+        display: none;
+        padding-left: $small-space;
+        &.isOpen {
+            display: initial;
+        }
+    }
+}

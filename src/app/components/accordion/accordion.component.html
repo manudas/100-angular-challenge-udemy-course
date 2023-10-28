@@ -1,0 +1,7 @@
+<ul class="accordion">
+    <li *ngFor="let item of items; let index = index">
+        <h4> {{ item.title }} </h4>
+        <i class="fa-solid fa-chevron-down" [class.isOpen]="item.expanded" (click)="toggle(index)"></i>
+        <p class="accordion-content" [class.isOpen]="item.expanded" (click)="toggle(index)"> {{ item.content }} </p>
+    </li>
+</ul>
