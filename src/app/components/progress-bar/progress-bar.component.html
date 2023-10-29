@@ -1,0 +1,8 @@
+<div class="progressbar-container">
+    <small class="progressbar-value"> {{ value }} </small>
+    <div class="progressbar-progress"
+        [ngStyle]="{
+            width: (value / max) * 100 + '%'
+        }"
+    ></div>
+</div>

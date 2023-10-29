@@ -5,6 +5,7 @@ import { AccordionModule } from './components/accordion/accordion.module';
 import { ToolbarModule } from './components/toolbar/toolbar.module';
 import { CardModule } from './components/card/card.module';
 import { AppComponent } from './app.component';
+import { ProgressBarModule } from './components/progress-bar/progress-bar.module';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
         AppRoutingModule,
         AccordionModule,
         CardModule,
+        ProgressBarModule,
         ToolbarModule
     ],
     providers: [],

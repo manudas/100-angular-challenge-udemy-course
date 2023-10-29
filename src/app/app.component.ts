@@ -20,4 +20,6 @@ export class AppComponent {
             expanded: false
         }
     ]
+    progressBarValue = 25
+    progressBarMax = 100
 }

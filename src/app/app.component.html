@@ -23,7 +23,7 @@
 <app-card
     className="fa-solid fa-face-grin-squint-tears fa-shake"
     title="This is my Card Title"
-    subTitle="This is my card Subtitle"
+    subTitle="Components"
 >
     <p footer>This is my card footer</p>
     <p body>This is my card body</p>
@@ -31,12 +31,26 @@
 <app-card
     className="fa-solid fa-face-grin-squint-tears fa-shake"
     title="Accordion card"
-    subTitle="This is my accordion card"
+    subTitle="Components"
 >
     <app-accordion
         body
         [items]="accordionItems"
     >
     </app-accordion>
+</app-card>
+<app-card
+    className="fa-solid fa-face-grin-squint-tears fa-shake"
+    title="Progress Bar card"
+    subTitle="Components"
+>
+    <app-progress-bar
+        body
+        [value]="progressBarValue"
+        [max]="progressBarMax"
+    >
+    </app-progress-bar>
+
+    <button footer (click)="progressBarValue=75" style="margin-bottom: 10px">Increase progress</button>
 </app-card>
 <router-outlet></router-outlet>
