@@ -1,0 +1,5 @@
+<div class="start-rating-container" title="Rating of {{value}} over {{max}}">
+    <i *ngFor="let fullStar of fullStarRatingArr" class="fa fa-star"></i>
+    <i *ngIf="hasHalfStarRating" class="fa fa-star-half"></i>
+    <i *ngFor="let fullEmptyStar of fullEmptyStarRatingArr" class="far fa-star"></i>
+</div>

@@ -6,6 +6,7 @@ import { ToolbarModule } from './components/toolbar/toolbar.module';
 import { CardModule } from './components/card/card.module';
 import { AppComponent } from './app.component';
 import { ProgressBarModule } from './components/progress-bar/progress-bar.module';
+import { StarRatingModule } from './components/star-rating/star-rating.module';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { ProgressBarModule } from './components/progress-bar/progress-bar.module
         AccordionModule,
         CardModule,
         ProgressBarModule,
-        ToolbarModule
+        ToolbarModule,
+        StarRatingModule
     ],
     providers: [],
     bootstrap: [AppComponent]

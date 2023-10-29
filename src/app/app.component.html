@@ -53,4 +53,16 @@
 
     <button footer (click)="progressBarValue=75" style="margin-bottom: 10px">Increase progress</button>
 </app-card>
+<app-card
+    className="fa-solid fa-face-grin-squint-tears fa-shake"
+    title="Star rating card"
+    subTitle="Components"
+>
+    <app-star-rating
+        body
+        [value]="3.55"
+        [max]="5"
+    >
+    </app-star-rating>
+</app-card>
 <router-outlet></router-outlet>
