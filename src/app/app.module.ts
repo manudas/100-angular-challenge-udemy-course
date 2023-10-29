@@ -7,6 +7,7 @@ import { CardModule } from './components/card/card.module';
 import { AppComponent } from './app.component';
 import { ProgressBarModule } from './components/progress-bar/progress-bar.module';
 import { StarRatingModule } from './components/star-rating/star-rating.module';
+import { TopOfPageModule } from './components/top-of-page/top-of-page.module';
 
 @NgModule({
     declarations: [
@@ -19,6 +20,7 @@ import { StarRatingModule } from './components/star-rating/star-rating.module';
         CardModule,
         ProgressBarModule,
         ToolbarModule,
+        TopOfPageModule,
         StarRatingModule
     ],
     providers: [],

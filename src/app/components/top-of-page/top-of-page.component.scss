@@ -1,0 +1,26 @@
+@import '../../../styles';
+
+i {
+    background-color: $red;
+    color: $white;
+    border-radius: $big-rounded;
+    font-size: 0px;
+    visibility: hidden;
+
+    transition: all 0.3s;
+
+    @include box-shadow();
+
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.isOpen {
+        font-size: $huge-font;
+        visibility: visible;
+    }
+}
