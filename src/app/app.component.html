@@ -3,67 +3,21 @@
   [title]="title"
 >
     <ul>
-        <li>
+        <li class="router-link" [routerLink]="routes.COMPONENTS_URI">
             Components
         </li>
-        <li>
+        <li class="router-link" [routerLink]="routes.DIRECTIVES_URI">
             Directives
         </li>
-        <li>
+        <li class="router-link" [routerLink]="routes.SERVICES_URI">
             Services
         </li>
-        <li>
+        <li class="router-link" [routerLink]="routes.PIPES_URI">
             Pipes
         </li>
-        <li>
+        <li class="router-link" [routerLink]="routes.OTHERS_URI">
             Others
         </li>
     </ul>
 </app-toolbar>
-<app-card
-    className="fa-solid fa-face-grin-squint-tears fa-shake"
-    title="This is my Card Title"
-    subTitle="Components"
->
-    <p footer>This is my card footer</p>
-    <p body>This is my card body</p>
-</app-card>
-<app-card
-    className="fa-solid fa-face-grin-squint-tears fa-shake"
-    title="Accordion card"
-    subTitle="Components"
->
-    <app-accordion
-        body
-        [items]="accordionItems"
-    >
-    </app-accordion>
-</app-card>
-<app-card
-    className="fa-solid fa-face-grin-squint-tears fa-shake"
-    title="Progress Bar card"
-    subTitle="Components"
->
-    <app-progress-bar
-        body
-        [value]="progressBarValue"
-        [max]="progressBarMax"
-    >
-    </app-progress-bar>
-
-    <button footer (click)="progressBarValue=75" style="margin-bottom: 10px">Increase progress</button>
-</app-card>
-<app-card
-    className="fa-solid fa-face-grin-squint-tears fa-shake"
-    title="Star Rating card"
-    subTitle="Components"
->
-    <app-star-rating
-        body
-        [value]="3.55"
-        [max]="5"
-    >
-    </app-star-rating>
-</app-card>
-<app-top-of-page></app-top-of-page>
 <router-outlet></router-outlet>
