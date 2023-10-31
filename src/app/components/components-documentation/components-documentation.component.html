@@ -44,3 +44,15 @@
     </app-star-rating>
 </app-card>
 <app-top-of-page></app-top-of-page>
+<app-card
+    className="fa-solid fa-face-grin-squint-tears fa-shake"
+    title="Circular loader"
+    subTitle="Components"
+>
+    <app-loader-circular
+        body
+        [isOpen]="openCircularLoader"
+    >
+    </app-loader-circular>
+    <button footer (click)="openCircularLoader = true">Open Circular Loader</button>
+</app-card>

@@ -21,4 +21,6 @@ export class ComponentsDocumentationComponent {
     ]
     progressBarValue = 25
     progressBarMax = 100
+
+    openCircularLoader: boolean = false;
 }

@@ -7,8 +7,7 @@ import { ProgressBarModule } from '../progress-bar/progress-bar.module';
 import { CardModule } from '../card/card.module';
 import { AccordionModule } from '../accordion/accordion.module';
 import { RouterModule } from '@angular/router';
-
-
+import { LoaderCircularModule } from '../loader-circular-component/loader-circular.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +17,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     AccordionModule,
     CardModule,
+    LoaderCircularModule,
     ProgressBarModule,
     TopOfPageModule,
     StarRatingModule,
