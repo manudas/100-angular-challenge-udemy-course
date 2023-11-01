@@ -43,7 +43,14 @@
     >
     </app-star-rating>
 </app-card>
-<app-top-of-page></app-top-of-page>
+<app-card
+    className="fa-solid fa-face-grin-squint-tears fa-shake"
+    title="Back to Top card"
+    subTitle="Components"
+>
+    <p body>Scroll down 400px to see the Back to Top component</p>
+    <app-top-of-page body></app-top-of-page>
+</app-card>
 <app-card
     className="fa-solid fa-face-grin-squint-tears fa-shake"
     title="Circular loader"
@@ -76,4 +83,17 @@
     subTitle="Components"
 >
     <app-payment-card-input body [readonly]=true [number]="'5567891234567891'"></app-payment-card-input>
+</app-card>
+<app-card
+    className="fa-solid fa-face-grin-squint-tears fa-shake"
+    title="Loader V2"
+    subTitle="Components"
+>
+    <app-loader
+        body
+        [isOpen]="openLoader"
+        [type]="loaderType"
+    >
+    </app-loader>
+    <button footer (click)="openLoader = true" style="margin-bottom: 10px; margin-top: 10px">Open Loader</button>
 </app-card>

@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { LoaderCircularModule } from '../loader-circular-component/loader-circular.module';
 import { PipesModule } from 'src/app/pipes/pipes.module';
 import { PaymentCardInputModule } from '../payment-card-input/payment-card-input.module';
+import { LoaderModule } from '../loader-component/loader.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PaymentCardInputModule } from '../payment-card-input/payment-card-input
     AccordionModule,
     CardModule,
     LoaderCircularModule,
+    LoaderModule,
     PaymentCardInputModule,
     PipesModule,
     ProgressBarModule,

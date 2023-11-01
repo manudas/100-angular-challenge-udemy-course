@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AccordionInterface } from '../accordion/accordion.interface';
+import LOADER_TYPE from '../loader-component/loaderType.enum';
 
 @Component({
     selector: 'app-components-documentation',
@@ -22,5 +23,7 @@ export class ComponentsDocumentationComponent {
     progressBarValue = 25
     progressBarMax = 100
 
-    openCircularLoader: boolean = false;
+    openCircularLoader: boolean = false
+    openLoader: boolean = false
+    loaderType: LOADER_TYPE = LOADER_TYPE.LOADING
 }
