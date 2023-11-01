@@ -8,6 +8,8 @@ import { CardModule } from '../card/card.module';
 import { AccordionModule } from '../accordion/accordion.module';
 import { RouterModule } from '@angular/router';
 import { LoaderCircularModule } from '../loader-circular-component/loader-circular.module';
+import { PipesModule } from 'src/app/pipes/pipes.module';
+import { PaymentCardInputModule } from '../payment-card-input/payment-card-input.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { LoaderCircularModule } from '../loader-circular-component/loader-circul
     AccordionModule,
     CardModule,
     LoaderCircularModule,
+    PaymentCardInputModule,
+    PipesModule,
     ProgressBarModule,
     TopOfPageModule,
     StarRatingModule,

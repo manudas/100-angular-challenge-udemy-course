@@ -54,5 +54,26 @@
         [isOpen]="openCircularLoader"
     >
     </app-loader-circular>
-    <button footer (click)="openCircularLoader = true">Open Circular Loader</button>
+    <button footer (click)="openCircularLoader = true" style="margin-bottom: 10px; margin-top: 10px">Open Circular Loader</button>
+</app-card>
+<app-card
+    className="fa-solid fa-face-grin-squint-tears fa-shake"
+    title="Payment card input"
+    subTitle="Components"
+>
+    <app-payment-card-input body [readonly]=true [number]="'4567891234567891'"></app-payment-card-input>
+</app-card>
+<app-card
+    className="fa-solid fa-face-grin-squint-tears fa-shake"
+    title="Payment card input"
+    subTitle="Components"
+>
+    <app-payment-card-input body [readonly]=true [number]="'3567891234567891'"></app-payment-card-input>
+</app-card>
+<app-card
+    className="fa-solid fa-face-grin-squint-tears fa-shake"
+    title="Payment card input"
+    subTitle="Components"
+>
+    <app-payment-card-input body [readonly]=true [number]="'5567891234567891'"></app-payment-card-input>
 </app-card>

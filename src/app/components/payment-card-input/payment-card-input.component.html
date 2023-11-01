@@ -1,0 +1,10 @@
+<div class="card-payment-container">
+    <ng-container *ngIf="readonly" [ngSwitch]="number[0]">
+        <i *ngSwitchCase="3" class="fa-brands fa-cc-amex"></i> <!-- American Express -->
+        <i *ngSwitchCase="4" class="fa-brands fa-cc-visa"></i> <!-- Visa -->
+        <i *ngSwitchCase="5" class="fa-brands fa-cc-mastercard"></i> <!-- Mastercard -->
+        <i *ngSwitchCase="6" class="fa-brands fa-cc-discover"></i> <!-- Discover -->
+        <i *ngSwitchDefault class="fa-solid fa-credit-card"></i> <!-- Unknown -->
+    </ng-container>
+    <input [readOnly]="readonly" [ngModel]="readonly ? (number | cardPaymentFormater : true) : number" (ngModelChange)="number = $event" />
+</div>
